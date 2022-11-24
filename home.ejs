@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align: center">
+<section></section>
+<h1 style="color: green"> Registered users </h1>
+<% data.forEach((data)=> { %>
+<ol>
+<h2>
+<li> <%= data.name %> <%= data.roll %></li>
+</h2>
+</ol>
+<% }) %>
+</section>
+<section>
+<form action="/del" method="GET">
+<h3 style="color: red;">Delete Record <input type="text" name="nm"></h3>
+<input type="submit">
+</form>
+</section>
+<section>
+<form action="/insert" method="GET">
+<h3 style="color: red;">Insert Record <input type="text" name="nm"></h3>
+<input type="submit">
+</form>
+</section>
+</body>
+</html>
